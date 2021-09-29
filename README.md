@@ -10,9 +10,9 @@ OS: MacOS 12.0 Beta(21A5522h)
 NodeJS: 16.9.1
 npm: 7.21.1
 pnpm: 6.15.1
-Vue: 请查看 package.json
-Element-Plus: 请查看 package.json
-Vite: 请查看 package.json
+Vue: 请查看 [package.json](package.json)
+Element-Plus: 请查看 [package.json](package.json)
+Vite: 请查看 [package.json](package.json)
 
 ## 测试步骤
 ### 环境准备
