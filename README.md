@@ -5,14 +5,14 @@ This instruction is written in Chinese, so please use the [translation tool](htt
 于 2021-09-29，参照[官方文档](https://element-plus.gitee.io/zh-CN/guide/quickstart.html#on-demand-import)中自动导入的说明，无法完成预期的自动导入(除了 [vite.config.js](vite.config.js) 中的配置外，无需在代码中以任何方式引入 Element-Plus 及其样式，即可正常使用其组件，并在打包时自动按需裁减)，只有手动导入方式生效。
 
 ### 背景环境
-硬件：Macbook Pro 13(M1 款)
-OS: MacOS 12.0 Beta(21A5522h)
-NodeJS: 16.9.1
-npm: 7.21.1
-pnpm: 6.15.1
-Vue: 请查看 [package.json](package.json)
-Element-Plus: 请查看 [package.json](package.json)
-Vite: 请查看 [package.json](package.json)
+* 硬件：Macbook Pro 13(M1 款)
+* OS: MacOS 12.0 Beta(21A5522h)
+* NodeJS: 16.9.1
+* npm: 7.21.1
+* pnpm: 6.15.1
+* Vue: 请查看 [package.json](package.json)
+* Element-Plus: 请查看 [package.json](package.json)
+* Vite: 请查看 [package.json](package.json)
 
 ## 测试步骤
 ### 环境准备
