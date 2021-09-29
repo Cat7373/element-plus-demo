@@ -6,22 +6,15 @@ import router from '@/router'
 import { ElButton } from 'element-plus'
 
 // (2)
-// import installElementPlus from '@/plugins/element'
-// import 'element-plus/theme-chalk/src/base.scss'
-
-// (3)
 // import ElementPlus from 'element-plus'
 // import 'element-plus/dist/index.css'
 
 const app = createApp(App)
 
-// (1)
+// (3)
 app.component(ElButton.name, ElButton)
 
-// (2)
-// installElementPlus(app)
-
-// (3)
+// (4)
 // app.use(ElementPlus)
 
 app.use(router)

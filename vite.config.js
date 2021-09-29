@@ -2,10 +2,10 @@ import vue from '@vitejs/plugin-vue'
 import visualizer from 'rollup-plugin-visualizer'
 import path from 'path'
 
-// (4)
+// (5)
 import ElementPlus from 'unplugin-element-plus/vite'
 
-// (5)
+// (6)
 // import Components from 'unplugin-vue-components/vite'
 // import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
@@ -14,10 +14,10 @@ export default {
   plugins: [
     vue(),
 
-    // (4)
+    // (7)
     ElementPlus({ useSource: true }),
 
-    // (5)
+    // (8)
     // Components({
     //   resolvers: [ElementPlusResolver()],
     // }),
