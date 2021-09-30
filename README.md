@@ -32,7 +32,7 @@ import { ElButton } from 'element-plus'
 
 共有 8 个修改点，每个实验均会说明，每组修改点均会说明应该启用哪些注释，对于未说明的修改点，应该将其注释掉。
 
-进行完相应修改后，应运行`pnpm run serve`和`pnpm run build`查看效果，对于 build 命令的结果，需运行`pnpm run preview`后访问`http://localhost:5000`，且可访问 /report.html 路径来查询打包结果的构成、大小。
+进行完相应修改后，应运行`pnpm run serve`和`pnpm run build`查看效果，对于 build 命令的结果，需运行`pnpm run preview`后访问查看，且可访问 /report.html 路径来查询打包结果的构成、大小。
 
 ### 按文档说明的自动导入
 启用的修改点：6、8
