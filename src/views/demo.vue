@@ -1,3 +1,3 @@
-<template lang="pug">
-el-button(type="primary") test btn
+<template>
+  <el-button type="primary">test btn</el-button>
 </template>
