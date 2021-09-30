@@ -3,7 +3,7 @@ import App from '@/App.vue'
 import router from '@/router'
 
 // (1)
-import { ElButton } from 'element-plus'
+// import { ElButton } from 'element-plus'
 
 // (2)
 // import ElementPlus from 'element-plus'
@@ -12,7 +12,7 @@ import { ElButton } from 'element-plus'
 const app = createApp(App)
 
 // (3)
-app.component(ElButton.name, ElButton)
+// app.component(ElButton.name, ElButton)
 
 // (4)
 // app.use(ElementPlus)

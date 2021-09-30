@@ -32,23 +32,23 @@ import { ElButton } from 'element-plus'
 
 共有 8 个修改点，每个实验均会说明，每组修改点均会说明应该启用哪些注释，对于未说明的修改点，应该将其注释掉。
 
-进行完相应修改后，应运行`pnpm run serve`和`pnpm run build`查看效果，对于 build 命令的结果，需使用 Nginx 等反向代理进行代理后访问，且可访问 /report.html 路径来查询打包结果的构成、大小。
+进行完相应修改后，应运行`pnpm run serve`和`pnpm run build`查看效果，对于 build 命令的结果，需运行`pnpm run preview`后访问`http://localhost:5000`，且可访问 /report.html 路径来查询打包结果的构成、大小。
 
-### 自动导入
+### 按文档说明的自动导入
 启用的修改点：6、8
 
 | 命令 | 测试结果 | report.html 大小 |
 | ---- | -------- | ---------------- |
 | serve | 正常显示 | / |
-| build | 按钮无样式 | 337.88KB |
+| build + preview | 按钮无样式 | 337.88KB |
 
-### 完整导入 + 自动导入
+### 完整导入 + 按文档说明的自动导入
 启用的修改点：2、4、6、8
 
 | 命令 | 测试结果 | report.html 大小 |
 | ---- | -------- | ---------------- |
 | serve | 正常显示 | / |
-| build | 正常显示，但打包体积较大，有大量未使用的组件，明显没有按需裁减 | 1.99MB |
+| build + preview | 正常显示，但打包体积较大，有大量未使用的组件，明显没有按需裁减 | 1.99MB |
 
 ### 手动导入
 启用的修改点：1、3、5、7
@@ -56,7 +56,15 @@ import { ElButton } from 'element-plus'
 | 命令 | 测试结果 | report.html 大小 |
 | ---- | -------- | ---------------- |
 | serve | 正常显示 | / |
-| build | 正常显示 | 337.83KB |
+| build + preview | 正常显示 | 337.83KB |
+
+### 按[回复#2](https://github.com/element-plus/element-plus/issues/3737#issuecomment-930170603)说明只启用 unplugin-element-plus
+启用的修改点：5、7
+
+| 命令 | 测试结果 | report.html 大小 |
+| ---- | -------- | ---------------- |
+| serve | 控制台提示`Failed to resolve component: el-button` | / |
+| build + preview | 控制台提示`Failed to resolve component: el-button` | 312.44KB |
 
 ## 测试结论
 1. 自动导入正确导入了组件，但未自动导入样式，导致无法正常使用
