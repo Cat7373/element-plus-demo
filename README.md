@@ -23,8 +23,16 @@ pnpm i
 ```
 
 ### 进行测试
-运行以下命令，在 serve 模式下即可复现问题(页面白屏，控制台报错，去掉 [demo.vue](src/views/demo.vue) 中的 `v-loading` 指令后可正常使用)
+运行以下命令，在 serve 模式下即可复现问题
 
 ```sh
 pnpm run serve
 ```
+
+问题表现为：页面白屏，控制台报错，去掉 [demo.vue](src/views/demo.vue) 中的 `v-loading` 指令后可正常使用
+
+控制台截图：
+
+<img src="https://user-images.githubusercontent.com/9296576/136084776-dd136b01-1043-4b3c-8503-3ae4ee8662f9.png">
+
+请尽量于[原 Issue](https://github.com/element-plus/element-plus/issues/3776) 回复，谢谢
