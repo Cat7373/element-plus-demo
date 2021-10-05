@@ -8,17 +8,16 @@
     "build": "vite build"
   },
   "dependencies": {
-    "element-plus": "=1.1.0-beta.18",
+    "element-plus": "=1.1.0-beta.19",
     "vue": "=3.2.19",
     "vue-router": "=4.0.11"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "=1.9.2",
+    "@vitejs/plugin-vue": "=1.9.3",
     "@vue/compiler-sfc": "=3.2.19",
     "rollup-plugin-visualizer": "=5.5.2",
     "sass": "=1.42.1",
-    "unplugin-element-plus": "=0.1.0",
-    "unplugin-vue-components": "=0.15.4",
-    "vite": "=2.5.10"
+    "unplugin-vue-components": "=0.15.6",
+    "vite": "=2.6.3"
   }
 }
