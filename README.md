@@ -1,15 +1,18 @@
 # element-plus-demo
 This instruction is written in Chinese, so please use the [translation tool](https://www.deepl.com) if you are not a native Chinese speaker, thank you.
 
+## 更新
+此问题于 `Element-Plus 1.1.0-beta.19` + `unplugin-vue-components 0.15.6` 已解决。
+
 ## 问题描述
-于 2021-09-29，参照[官方文档](https://element-plus.gitee.io/zh-CN/guide/quickstart.html#on-demand-import)中自动导入的说明，无法完成预期的自动导入(除了 [vite.config.js](vite.config.js) 中的配置外，无需在代码中以任何方式引入 Element-Plus 及其样式，即可正常使用其组件，并在打包时自动按需裁减)，只有手动导入方式生效。
+于 2021-09-29，参照[官方文档](https://element-plus.org/en-US/guide/quickstart.html#on-demand-import)中自动导入的说明，无法完成预期的自动导入(除了 [vite.config.js](vite.config.js) 中的配置外，无需在代码中以任何方式引入 Element-Plus 及其样式，即可正常使用其组件，并在打包时自动按需裁减)，只有手动导入方式生效。
 
 ### 背景环境
 * 硬件：Macbook Pro 13(M1 款)
-* OS: MacOS 12.0 Beta(21A5522h)
-* NodeJS: 16.9.1
-* npm: 7.21.1
-* pnpm: 6.15.1
+* OS: MacOS 12.0 Beta(21A5534d)
+* NodeJS: 16.10.0
+* npm: 7.24.0
+* pnpm: 6.16.1
 * Vue: 请查看 [package.json](package.json)
 * Element-Plus: 请查看 [package.json](package.json)
 * Vite: 请查看 [package.json](package.json)
@@ -40,7 +43,7 @@ import { ElButton } from 'element-plus'
 | 命令 | 测试结果 | report.html 大小 |
 | ---- | -------- | ---------------- |
 | serve | 正常显示 | / |
-| build + preview | 按钮无样式 | 337.88KB |
+| build + preview | 按钮无样式 | 337.76KB |
 
 ### 完整导入 + 按文档说明的自动导入
 启用的修改点：2、4、6、8
@@ -56,7 +59,7 @@ import { ElButton } from 'element-plus'
 | 命令 | 测试结果 | report.html 大小 |
 | ---- | -------- | ---------------- |
 | serve | 正常显示 | / |
-| build + preview | 正常显示 | 337.83KB |
+| build + preview | 正常显示 | 337.86KB |
 
 ### 按[回复#2](https://github.com/element-plus/element-plus/issues/3737#issuecomment-930170603)说明只启用 unplugin-element-plus
 启用的修改点：5、7
@@ -64,7 +67,7 @@ import { ElButton } from 'element-plus'
 | 命令 | 测试结果 | report.html 大小 |
 | ---- | -------- | ---------------- |
 | serve | 控制台提示`Failed to resolve component: el-button` | / |
-| build + preview | 控制台提示`Failed to resolve component: el-button` | 312.44KB |
+| build + preview | 未显示按钮，只显示了`test bth`一行字 | 312.46KB |
 
 ## 测试结论
 1. 自动导入正确导入了组件，但未自动导入样式，导致无法正常使用
