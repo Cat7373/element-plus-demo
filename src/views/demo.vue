@@ -1,5 +1,5 @@
 <template>
-  <el-button type="primary">test btn</el-button>
+  <el-button type="primary" @click="onClickButton">test btn</el-button>
 
   <el-table :data="tableList" v-loading="loading">
     <el-table-column prop="fidle1" label="fidle1"></el-table-column>
@@ -9,6 +9,8 @@
 </template>
 
 <script>
+import { ElMessageBox } from 'element-plus'
+
 export default {
   data() {
     return {
@@ -26,6 +28,11 @@ export default {
         fidle2: 'r3f2',
         fidle3: 'r3f3',
       }],
+    }
+  },
+  methods: {
+    onClickButton() {
+      ElMessageBox.confirm('the demo message.')
     }
   },
 }
