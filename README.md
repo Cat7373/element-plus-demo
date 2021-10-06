@@ -38,13 +38,13 @@ pnpm run serve
 <img src="https://user-images.githubusercontent.com/9296576/136084776-dd136b01-1043-4b3c-8503-3ae4ee8662f9.png">
 
 ### 总结
-总结一下，现在官网提供了几种使用`Element-Plus`的方案，测试如下：
+总结一下，现在[官方文档](https://element-plus.org/en-US/guide/quickstart.html#on-demand-import)提供了几种使用`Element-Plus`的方案，测试如下：
 
 #### 完整导入
 打包结果较大
 
 #### 自动导入
-插件类(ElLoading、ElMessage 等)不能用，需手动用`app.use(ElLoading)`的形式注册，但文档未说明此情况
+插件类(ElLoading、ElMessage 等)不能用，需手动用`app.use(ElLoading)`的形式注册，且需要手动引入样式或使用手动导入插件来引入，但文档未说明此情况
 
 #### 手动导入
 需要手动一个个组件 import，比较麻烦，且未提供完整的组件列表
