@@ -31,11 +31,9 @@ pnpm i
 pnpm run serve
 ```
 
-问题表现为：页面白屏，控制台报错
+问题表现为：页面白屏，控制台报错：
 
-控制台截图：
-
-<img src="https://user-images.githubusercontent.com/9296576/136084776-dd136b01-1043-4b3c-8503-3ae4ee8662f9.png">
+![](https://user-images.githubusercontent.com/9296576/136084776-dd136b01-1043-4b3c-8503-3ae4ee8662f9.png)
 
 去掉 [demo.vue](src/views/demo.vue) 中的 `v-loading` 指令后可正常渲染，但点击按钮触发`ElMessageBox`发现，样式未导入
 
