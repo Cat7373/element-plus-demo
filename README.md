@@ -4,6 +4,8 @@ This instruction is written in Chinese, so please use the [translation tool](htt
 ## 问题描述
 于 2021-10-06，参照[官方文档](https://element-plus.org/en-US/guide/quickstart.html#on-demand-import)中自动导入的说明配置后，v-loading 指令无法正常使用。
 
+请尽量于[原 Issue](https://github.com/element-plus/element-plus/issues/3776) 回复，谢谢
+
 ### 背景环境
 * 硬件：Macbook Pro 13(M1 款)
 * OS: MacOS 12.0 Beta(21A5534d)
@@ -35,4 +37,16 @@ pnpm run serve
 
 <img src="https://user-images.githubusercontent.com/9296576/136084776-dd136b01-1043-4b3c-8503-3ae4ee8662f9.png">
 
-请尽量于[原 Issue](https://github.com/element-plus/element-plus/issues/3776) 回复，谢谢
+### 总结
+总结一下，现在官网提供了几种使用`Element-Plus`的方案，测试如下：
+
+#### 完整导入
+打包结果较大
+
+#### 自动导入
+插件类(ElLoading、ElMessage 等)不能用，需手动用`app.use(ElLoading)`的形式注册，但文档未说明此情况
+
+#### 手动导入
+需要手动一个个组件 import，比较麻烦，且未提供完整的组件列表
+
+插件类(ElLoading、ElMessage 等)不能用，需手动用`app.use(ElLoading)`的形式注册，但文档未说明此情况
