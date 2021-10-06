@@ -44,7 +44,7 @@ pnpm run serve
 打包结果较大
 
 #### 自动导入
-插件类(ElLoading、ElMessage 等)不能用，需手动用`app.use(ElLoading)`的形式注册，且需要手动引入样式或使用手动导入插件来引入，但文档未说明此情况
+插件类(ElLoading、ElMessage 等)不能用，需手动用`app.use(ElLoading)`的形式注册，且需要手动引入样式或使用`unplugin-element-plus`插件来引入，但文档未说明此情况
 
 #### 手动导入
 需要手动一个个组件 import，比较麻烦，且未提供完整的组件列表
